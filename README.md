@@ -1,6 +1,6 @@
 # JS Time Series Chart
 
-Very simple demo project using Flot to graph time series data.
+Very simple demo project using [Flot](https://github.com/flot/flot/blob/master/README.md) to graph time series data.
 
 Data is stored as JavaScript in `n-transactions.js` and loaded using JSONP.
 It's done this way so that you don't need to run a web server - you can just open the `index.html` file in a browser.
