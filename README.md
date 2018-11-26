@@ -1,4 +1,4 @@
-# JS Graph
+# JS Time Series Chart
 
 Very simple demo project using Flot to graph time series data.
 
