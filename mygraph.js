@@ -6,7 +6,7 @@ var series;
 var options = {
   xaxis: { mode: "time", timeformat: "%Y/%m/%d" },
   yaxis: { min: 0 },
-  grid: { hoverable: true, clickable: true }
+  grid: { hoverable: true }
 };
 
 // What we do when we're hovering over a point on the chart
