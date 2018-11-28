@@ -1,4 +1,4 @@
-// I don't know if the data is guaranteed to load before the page is ready, so check
+// I don't know if the data is guaranteed to finish loading before the page is ready, so don't try to plot the graph until both are done.
 var pageReady = false;
 var parsed = false;
 
@@ -9,7 +9,7 @@ var options = {
   grid: { hoverable: true }
 };
 
-// What we do when we're hovering over a point on the chart
+// Show the value when we're hovering over a point on the chart
 function hover(event, pos, item) {
   if (item) {
     $("#label").css("display", "block");
@@ -38,6 +38,8 @@ function parseSeries(text) {
 }
 
 // parse all the series in the response
+// This is the function specified in index.html as the JSONP callback, which is invoked when the data finishes loading.
+// (Which is why it's not referenced anywhere else in this file.)
 function parseResponse(text) {
   series = text.map(parseSeries);
   parsed = true;
