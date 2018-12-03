@@ -1,8 +1,8 @@
-/* Display a graph of historical values retrieved from the realtime.cgi service.
+/* Display a graph of historical values retrieved from the random.cgi service.
  * Clicking anywhere on the page pauses/resumes the requests to the server.
  */
 
-var SERVICE_URL = 'http://localhost/~colin/jsgraph/realtime.cgi';
+var SERVICE_URL = 'http://localhost/~colin/jsgraph/random.cgi';
 var MAX_POINTS = 1000;  // How much history we keep
 var UPDATE_INTERVAL = 250;  // Delay between updates, in milliseconds
 
